@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Directory Structure:
+
+# Parent Directory
+# -Directory 1    (create)
+# --File A          (create)
+
+# Starting Position: Parent
+
+# 1: Create a copy of File A in a new subdirectory of Parent called Directory 2
+
+mv Copy_File_A directory_2/Copy_File_A
+
+# 2: Store a record of File A's Location and Ownership Information in a File called __ in Directory 2
+
+readlink -f File_A >> File_Data
+ls -l File_A >> File_Data
+
+# 3. Create file “foo” and make it visible to all. 
+
+chmod 777 foo
+
+# 4.Copy the file "foo." into "foo.txt.copy"
+
+cp -r foo foo.txt.copy
+
+# 5.Rename the file "foo.txt.copy" to "foo2".
+
+mv foo.txt.copy foo2
+
+# 6.. Move file.3 to new subdirectory "C" in Directory Alpha, and Copy File.3 with the name File.2 to subdirectory A in Alpha
+
+mv foo2 subdirectory_C 
+cp -r foo2 File.2
+mv File.2 subdirectory_A
