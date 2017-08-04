@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Write a program named check_directory.sh to examine a given directory’s contents.
+ 
+#  run “./check_dir.sh path”
+
+# A.	checks if each item in the path directory is a file or a directory. 
+# B.	outputs the number of files and number of directories in specified path directory.
+
+count_directory=0
+count_file=0
+for f in `ls` 
+do 
+if [ -d $f ]; then 
+	echo "$f is a directory." 
+	let count_directory=count_directory+1
+elif [ -f $f ]; then
+	echo "$f is a file." 
+	let count_file=count_file+1
+fi 
+echo $count_directory
+echo $count_file
+done
+count_directory=0
+count_file=0
+
+
+

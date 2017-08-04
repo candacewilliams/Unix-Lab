@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# 2. Write a program named check_source_cp.sh to copy files. When run 
+
+# Run “./check_source_cp.sh sourcefile targetfilename”,
+ 
+# A.	checks whether source file exists. 
+# B.	If source file exists, the copy sourcefile to targetfilename. 
+# C.	If source file does not exist, exit program with an error message “Source file does not exist signed <script writer name (your name)!>”.
+
+FILE_NAME=$1
+TARGET_FILE=$2
+if [ -f $FILE_NAME ]; then
+	cp $FILE_NAME $TARGET_FILE
+else
+	echo "Source file does not exist signed Candace Williams" 
+	exit 1
+fi

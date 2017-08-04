@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# 1.	 Modify “HW 4 Generate Tree Script” 
+
+# #! /bin/bash  mkdir -p {a,b,c}/{d,e,f}/{1,2,3}
+
+# Replace a, b and c with directory names of your choosing beginning with a, b, c like {asparagus, beets, carrots},  {Austin, Boston, Chicago} or {Avant, Biggie, Ciarra}
+
+
+# 2.	Run your modified script generating  directories.
+# ~/assignment_4
+	mkdir -p {Avant, Biggie, Ciara}/{d,e,f}/{1,2,3}
+~/assignment_4
+	ls 
+{Avant, Biggie,Ciara}
+
+# Questions
+
+# 1.	What is the command to compress the “A*” directory and all sub directories?
+#             tar -cvf A_Compressed.tar.gz Avant
+# 2.	What is the command to compress the “e” directory and all subdirectories?
+#  	tar -cvf e_Compressed.tar.gz Avant/e
+# 3.	What is the command to compress all directories and subdirectories?
+# 	tar -cvf All_Compressed.tar.gz Avant  Biggie Ciara

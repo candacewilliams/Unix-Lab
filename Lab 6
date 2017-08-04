@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# 1.	Run Random.sh script to generate file with 100 random words
+# 2.	Write a program that places words beginning A-F, G-L, M-P, Q-Z in separate files
+
+# Use grep command and place words in files using first letter word name
+
+# -	Program with 10 or less lines
+# -	(or) single line of piped commands
+
+./random.sh
+cat data.txt | grep ‘^[a-f]’ > a-f.txt
+cat data.txt | grep ‘^[g-l]’ > g-l.txt
+cat data.txt | grep ‘^[m-p]’ > m-p.txt
+cat data.txt | grep ‘^[q-z]’ > q-z.txt

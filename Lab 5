@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# 1.	Run HW 5 Process Generator Script  (launches 4 processes)
+# 2.	Run command to determine launched process ID’s
+# 3.	Kill 4 processes newly generated
+# 4.	Submit -- 
+# a.	 Output showing new processes were created 
+# b.	 Command history showing commands used to kill newly created processes.
+
+vim p_generator.sh
+ clear
+ ./p_generator.sh
+ vim p_generator.sh
+ clear
+ ./p_generator.sh
+ vim p_generator.sh
+ ./p_generator.sh
+ vim p_generator.sh
+ clear
+ ./p_generator.sh
+ clear
+ ./p_generator.sh &
+ ps | grep 'p_generator'
+ kill 687
+ ./p_generator.sh & ./p_generator.sh & ./p_generator.sh & ./p_generator.sh &
+ ps
+ kill ps
+ ps
+ kill
+ ps
+ kill 728
+ kill 729
+ kill 731
+ kill 734
+ ps
